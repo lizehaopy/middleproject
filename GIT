@@ -1,0 +1,82 @@
+GIT　代码协同管理工具
+svn
+代码管理工具作用:
+*防止代码丢失，做代码备份
+*支持代码的版本控制，可以设置多个节点，在多个版本见切换
+*可以方便团队开发,更好的做代码管理
+*可以方便产品迭代
+
+什么是git
+git是一个开源的分布式版本控制系统，可以用于高效的管理大小项目。
+
+分布式和集中式
+
+分布式:没有中央管理器,每个节点都保存代码,没有明确的中央服务器,节点之间相互推送共享代码。
+
+集中式:代码由中央服务端集中管理，为每个节点分配权限，每个节点统一上传到中央服务器或从服务器中下载。
+
+
+git特点
+*git可以管理各种文件，特别是代码项目，多在*nix系统使用
+*git是分布式不同于svn的集中式,这是git和svn的最大差别
+*git是开源系统，可以脱网使用，数据传输速度快
+*git更好的支持分支协作，分布式代码更安全
+
+git安装
+
+sudo apt-get install git
+
+git config
+
+配置级别
+    1.系统中所有用户都可使用该配置
+        命令 git config --system
+        配置文件: /etc/gitconfig
+
+    2.当前用户可以使用该配置
+        命令　git config --global
+        配置文件 ~/.gitconfig
+
+    3.当前项目可使用该配置
+        (有且在项目目录下执行)
+        命令 git config
+        配置文件 project/.git/config
+
+配置内容:
+    用户
+    邮箱
+    １．配置用户名
+    　　配置用户名为Tedu
+    git config --global user.name Tedu
+
+    2.配置邮箱
+    sudo git config --system user.email 845143445@qq.com
+
+    tarena@tedu:~/桌面/MongoDB_Day1/re$ cat /etc/gitconfig 
+[user]
+    email = 845143445@qq.com
+
+    3.配置项目
+    git init
+    git config core.editor subl
+    cat .git/config
+
+    [core]
+    repositoryformatversion = 0
+    filemode = true
+    bare = false
+    logallrefupdates = true
+    editor = subl
+
+    4.查看项目配置
+    git config --list
+
+
+
+
+
+
+
+
+
+
