@@ -119,6 +119,12 @@ git log --pretty=oneline
 6.查看本地文件和仓库差异
 git diff [file]
 
+7.从仓库恢复文件到工作区
+git checkout [file]
+
+8.文件的移动和删除
+git mv [file]
+git rm [file] # git reset HEAD [file]
 
 
 
