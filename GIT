@@ -70,8 +70,54 @@ git config
 
     4.查看项目配置
     git config --list
+    tarena@tedu:~/桌面/MongoDB_Day1/re$ git config --list 
+
+    user.email=845143445@qq.com
+    user.name=Tedu
+    core.repositoryformatversion=0
+    core.filemode=true
+    core.bare=false
+    core.logallrefupdates=true
+    core.editor=subl
 
 
+git的基本命令
+
+1.初始化仓库
+ git init
+ 在某个目录下初始化仓库后自动产生.git目录
+ 则该目录变为一个git仓库，在该目录下所有文件可以使用git管理
+
+
+
+
+ 3.文件提交到暂存区
+
+ git add [file]
+
+*可以一次提交多个文件或者单个文件，或者*表示所有文件.(隐藏文件除外)
+* 提交内容可以是普通文件也可以是目录
+*暂存区只是做工作区的提交修改记录，并不是将文件备份存储
+
+git rm --cached begin.py
+取消提交
+
+
+4.将文件同步到本地git仓库
+
+git commit -m 'some message'
+*同步要添加说明，只能同步暂存区的内容
+
+#丢弃工作区的改动,从仓库回复文件
+git chechout -- xxx
+
+5.查看commit 日志
+
+git log
+git log --pretty=oneline
+
+6.查看本地文件和仓库差异
+git diff [file]
 
 
 
