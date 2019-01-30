@@ -174,5 +174,8 @@ git stash apply stash@{0}
 *最新的保存为{0}
 *执行该命令时工作区必须为干净状态
 
-
+删除保存的工作区
+git stash drop stash@{0}
+git stash pop 删除最新的
+git stash clear　删除所有
 2.方案2 .。.。.。.。.。.。.。.。
