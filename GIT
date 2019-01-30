@@ -135,7 +135,7 @@ git reset --hard HEAD^
 
 git reset --hard commit_id
 *commit_id 用前7位即可
-*不是回到commit_id位置，而是将HEAD指向该ID
+*回到commit_id位置
 
 
 
