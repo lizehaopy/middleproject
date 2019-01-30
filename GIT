@@ -276,5 +276,8 @@ push将本地分支推送到远程
 
  git pull
 
- 
+ 将远程分支获取到本地仓库，但是不会合并到本地分支
+ git fetch
+ *可以通过 git branch -r查看拉取的远程分支
+ 然后使用git merge 命令有选择的合并到本地
 
