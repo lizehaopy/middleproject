@@ -261,4 +261,20 @@ push将本地分支推送到远程
  向远程推送标签
  git push origin v2.0 某一个标签
  git push origin --tags 所有标签
+
+ commit提交以后可以直接使用
+ git push 推送
+
+将推送给远程的某一个分支删除
+ git push origin --delete fucking
+
+
+ 5.克隆远程仓库项目
+ git clone tarena@127.0.0.1:/home/tarena/桌面/MongoDB_Day1/gitrepo/cangku
+
+ 6.拉取远程代码到本地
+
+ git pull
+
  
+
