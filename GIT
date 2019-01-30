@@ -137,7 +137,8 @@ git reset --hard commit_id
 *commit_id 用前7位即可
 *回到commit_id位置
 
-
+git reflog 查看所有的操作记录
+*然后就可以做对应的回复操作了
 
 
 
