@@ -141,4 +141,18 @@ git reflog 查看所有的操作记录
 *然后就可以做对应的回复操作了
 
 
+标签管理
+
+什么是标签:　即在某个commit_id位置添加快照，保存工作状态，一般用于版本的迭代，和重要项目节点记录。
+
+    1.创建新的标签
+        git tag v1.0
+        *默认在最新的commit_id处添加标签
+    　　　
+    　　　　git tag v1.0 [commit_id]
+        *也可以指定一个commit_id版本
+
+        git tag v1.0 -m 'message'
+        *为标签添加信息
+
 
