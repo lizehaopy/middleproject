@@ -127,6 +127,15 @@ git mv [file]
 git rm [file] # git reset HEAD [file]
 
 
+版本控制命令
+1.回到之前的commit id位置
+git reset --hard HEAD^
+*HEAD后有几个^就表示退回几个commit位置
+(一般都是退回上一个版本)
+
+git reset --hard commit_id
+*commit_id 用前7位即可
+*不是回到commit_id位置，而是将HEAD指向该ID
 
 
 
