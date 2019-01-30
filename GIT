@@ -155,4 +155,20 @@ git reflog 查看所有的操作记录
         git tag v1.0 -m 'message'
         *为标签添加信息
 
+    2.去往某个标签版本
+    　　　 git reset --hard v1.0
 
+    3.删除标签
+        git tag -d v1.0
+
+
+
+临时工作区操作
+git stash 创建
+* 对工作区文件的修改进行保存
+git stash list　查看
+
+git stash apply stash@{0}
+*选择并应用某个工作区
+*最新的保存为{0}
+*执行该命令时工作区必须为干净状态
