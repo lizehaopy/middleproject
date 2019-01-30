@@ -211,3 +211,54 @@ git help [命令名称]
 
 
 远程仓库
+
+远程仓库: 即远程主机上的git仓库,实际git为分布式结构
+每台主机git仓库都相似，只是把其他主机的git
+仓库成为远程仓库
+
+1.创建共享远程仓库
+[1] 创建仓库目录，设置目录属主
+    mkdir gitrepo
+    chown tarena:tarena gitrepo
+
+[2]将仓库目录使用 --bare初始化,给仓库其名称
+    cd gitrepo
+    git init --bare [仓库名称]
+    *通常可以用.git结尾
+
+[3]设置[仓库名称]目录的属主与项目目录的相同
+    chown -R tarena:tarena [仓库名称]
+
+2.远程仓库链接协议
+*本地协议 #直接通过路径链接一个项目仓库
+file://opt/git/project
+
+*SSH 协议　#通过SSH协议方式链接远程
+ssh://user@server:/project
+    user@server:./project
+
+*git 协议
+
+*HTTP/HTTPS 协议
+http://www.com/project.git
+#一般本地测试用
+
+
+1.
+git remote add origin tarena@127.0.0.1:/home/tarena/桌面/MongoDB_Day1/re.git
+
+*该命令必须在某个git项目目录下运行
+*删除远程主机: git remote rm [远程主机名]
+
+2.
+push将本地分支推送到远程
+
+将本地的ｍａｓｔｅｒ分支推送到远程
+ git push -u origin master
+
+ *-u表示本地master和远程master建立追踪关系这样后面本地分支修改后再向远程推送则可以省略分知名.
+
+ 向远程推送标签
+ git push origin v2.0 某一个标签
+ git push origin --tags 所有标签
+ 
