@@ -192,4 +192,8 @@ git stash clear　删除所有
     创建时一定要保证当前分支是干净的！
     git branch　分支名字
 
-    git checkout 分支名字   
+    git checkout 分支名字
+    *切换分支
+
+    git checkout -b 名字
+    *创建并切换分支   
